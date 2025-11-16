@@ -1,0 +1,87 @@
+body {
+    font-family: "Caveat", cursive;
+    background: #faf7f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #444;
+}
+
+.sticky-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* sticky notes */
+.sticky-note {
+    width: 220px;
+    min-height: 180px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 14px;
+    font-size: 16px;
+
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: transform 0.15s;
+    cursor: pointer;
+}
+
+/* pastel colors */
+.note-1 { background: #FDE2E4; }
+.note-2 { background: #E2ECE9; }
+.note-3 { background: #FFF1E6; }
+.note-4 { background: #EDE7F6; }
+.note-5 { background: #E1F5FE; }
+.note-6 { background: #F3E5F5; }
+
+.sticky-note:hover {
+    transform: scale(1.05);
+}
+
+/* popup */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.popup-content img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.close {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
