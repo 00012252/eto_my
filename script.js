@@ -1,7 +1,7 @@
 const notes = [
     {
         text: "наш первый день вместе 🩷",
-        img: "images/11-oct.jpg"
+        img: "images/11-oct.JPG"
     },
     {
         text: "гуляли, ели что-то вкусное, много смеялись",
@@ -49,3 +49,4 @@ document.querySelector(".close").onclick = () => {
     document.getElementById("popup").style.display = "none";
 
 };
+
